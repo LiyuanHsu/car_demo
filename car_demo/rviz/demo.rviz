@@ -111,10 +111,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        front_left_middle_sonar_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         front_left_wheel:
           Alpha: 1
           Show Axes: false
@@ -197,8 +193,6 @@ Visualization Manager:
           Value: true
         front_left_laser_link:
           Value: true
-        front_left_middle_sonar_link:
-          Value: true
         front_left_wheel:
           Value: true
         front_right_far_sonar_link:
@@ -257,8 +251,6 @@ Visualization Manager:
               front_left_far_sonar_link:
                 {}
               front_left_laser_link:
-                {}
-              front_left_middle_sonar_link:
                 {}
               front_right_far_sonar_link:
                 {}

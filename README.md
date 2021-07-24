@@ -58,3 +58,37 @@ If using a Logitech F710 controller:
 * Y puts the car into DRIVE
 * A puts the car into REVERSE
 * B puts the car into NEUTRAL
+
+
+### Prius joint list
+1. base_link_connection,        type=fixed
+2. steering_joint,              type=continuous
+3. front_left_steer_joint,      type=continuous
+4. front_right_steer_joint,     type=continuous
+5. front_left_wheel_joint,      type=continuous
+6. front_right_wheel_joint,     type=continuous
+7. rear_left_wheel_joint,       type=continuous
+8. rear_right_wheel_joint,      type=continuous
+
+9. center_laser_joint,          type=fixed
+10. front_left_laser_joint,      type=fixed
+11. front_right_laser_joint,     type=fixed
+
+12. front_camera_joint,         type=fixed
+13. front_camera_optical_joint, type=fixed
+14. back_camera_joint,          type=fixed
+15. back_camera_optical_joint,  type=fixed
+16. left_camera_joint,          type=fixed
+17. left_camera_optical_joint,  type=fixed
+18. right_camera_joint,         type=fixed
+19. right_camera_optical_joint, type=fixed
+
+20. back_left_far_sonar_joint,      type=fixed
+21. back_left_middle_sonar_joint,   type=fixed
+22. back_right_far_sonar_joint,     type=fixed
+23. back_right_middle_sonar_joint,  type=fixed
+
+24. front_left_far_sonar_joint,      type=fixed
+25. front_left_middle_sonar_joint,   type=fixed
+26. front_right_far_sonar_joint,     type=fixed
+27. front_right_middle_sonar_joint,  type=fixed

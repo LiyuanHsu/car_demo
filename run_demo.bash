@@ -22,4 +22,4 @@ if ! [ -x "$(command -v git)" ]; then
     pip install -U git+https://github.com/osrf/rocker.git
 fi
 
-rocker --nvidia --x11 --devices /dev/input/js0 /dev/input/js1 -- osrf/car_demo
+rocker --x11 -- osrf/car_demo

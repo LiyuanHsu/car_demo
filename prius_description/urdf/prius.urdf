@@ -444,30 +444,6 @@
     <origin xyz="-0.24 2.4 0.5" rpy="0 0 1.5707"/>
   </joint>
 
-  <link name="front_left_far_sonar_link">
-    <inertial>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-  </link>
-  <joint name="front_left_far_sonar_joint" type="fixed">
-    <parent link="chassis"/>
-    <child link="front_left_far_sonar_link"/>
-    <origin xyz="0.7 -2.1 0.5" rpy="0 0 -1.5707"/>
-  </joint>
-
-  <link name="front_left_middle_sonar_link">
-    <inertial>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-  </link>
-  <joint name="front_left_middle_sonar_joint" type="fixed">
-    <parent link="chassis"/>
-    <child link="front_left_middle_sonar_link"/>
-    <origin xyz="0.24 -2.3 0.5" rpy="0 0 -1.5707"/>
-  </joint>
-
   <link name="front_right_far_sonar_link">
     <inertial>
       <mass value="1"/>
@@ -907,70 +883,6 @@
       <plugin name='back_right_middle_sonar_sensor' filename='libgazebo_ros_range.so'>
         <topicName>/prius/back_sonar/right_middle_range</topicName>
         <frameName>back_right_middle_sonar_link</frameName>
-      </plugin>
-      <always_on>false</always_on>
-      <update_rate>5</update_rate>
-      <visualize>0</visualize>
-    </sensor>
-  </gazebo>
-
-  <gazebo reference="front_left_far_sonar_link">
-    <sensor name='front_left_far_sonar_sensor' type='ray'>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>1</samples>
-            <resolution>1</resolution>
-            <min_angle>0</min_angle>
-            <max_angle>0</max_angle>
-          </horizontal>
-          <vertical>
-            <samples>1</samples>
-            <min_angle>0</min_angle>
-            <max_angle>0</max_angle>
-          </vertical>
-        </scan>
-        <range>
-          <min>0.2</min>
-          <max>5</max>
-          <resolution>0.1</resolution>
-        </range>
-      </ray>
-      <plugin name='front_left_far_sonar_sensor' filename='libgazebo_ros_range.so'>
-        <topicName>/prius/front_sonar/left_far_range</topicName>
-        <frameName>front_left_far_sonar_link</frameName>
-      </plugin>
-      <always_on>false</always_on>
-      <update_rate>5</update_rate>
-      <visualize>0</visualize>
-    </sensor>
-  </gazebo>
-
-  <gazebo reference="front_left_middle_sonar_link">
-    <sensor name='front_left_middle_sonar_sensor' type='ray'>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>1</samples>
-            <resolution>1</resolution>
-            <min_angle>0</min_angle>
-            <max_angle>0</max_angle>
-          </horizontal>
-          <vertical>
-            <samples>1</samples>
-            <min_angle>0</min_angle>
-            <max_angle>0</max_angle>
-          </vertical>
-        </scan>
-        <range>
-          <min>0.2</min>
-          <max>5</max>
-          <resolution>0.1</resolution>
-        </range>
-      </ray>
-      <plugin name='front_left_middle_sonar_sensor' filename='libgazebo_ros_range.so'>
-        <topicName>/prius/front_sonar/left_middle_range</topicName>
-        <frameName>front_left_middle_sonar_link</frameName>
       </plugin>
       <always_on>false</always_on>
       <update_rate>5</update_rate>
